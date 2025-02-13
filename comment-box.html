@@ -4,15 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comment-Box</title>
-  <style>
-    #area{
-      cursor: pointer;
-    }
-  </style>
 </head>
 <body>
   <h1>Please add your comment </h1>
-  <div>
+  <div id="main-container">
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus eaque laboriosam omnis excepturi sit porro unde nobis rerum labore dolor deserunt perferendis molestias quaerat, delectus aliquid perspiciatis consectetur ducimus. Ipsa rerum sapiente quibusdam mollitia id doloremque est aliquid odio. Eos reprehenderit atque, eligendi iusto omnis quis incidunt itaque quia error.</p>
     <p>Itaque voluptatem quam dicta iure optio sit doloremque sint odit nesciunt, saepe unde quis omnis totam qui nemo iusto rerum ex! Accusantium aperiam veniam omnis culpa voluptas tenetur provident, porro quia facere quisquam maxime doloribus modi sapiente est tempora odit reprehenderit fuga, eaque natus suscipit vitae! Aspernatur est quae quibusdam!</p>
     <p>Eos, officiis ratione. Nisi vitae ducimus ipsa? Est ipsam necessitatibus iure quo in incidunt odio omnis excepturi ipsum obcaecati voluptatum impedit fugit quidem sit blanditiis dolorem aspernatur, quisquam deserunt accusantium repellat ea. Est quam deleniti dolores accusamus sapiente maiores id maxime! Voluptates vitae adipisci aut tenetur rem distinctio fugit alias!</p>
@@ -22,24 +17,38 @@
     <br>
     <textarea name="input-field" id="new-comment-box" cols="60" rows="10"></textarea>
     <br>
-    <button>commnet</button>
+    <button id="btn">commnet</button>
   </div>
+  <!-- <div>
+   <label id="area"  for="box">comment koro</label>
+    <br>
+    <br>
+    <br>
+    <textarea name="textarea" id="box" cols="50" rows="10"></textarea> 
 
-    <!-- <label id="area"  for="box">comment koro</label>
-    <br>
-    <br>
-    <br>
-    <textarea name="textarea" id="box" cols="50" rows="10"></textarea> -->
-
-  <!-- এটা ফর্মের সঠিক স্ট্রাকচার! 🎯 এখন ফর্ম কাজ করবে পারফেক্টলি! 🚀
+  এটা ফর্মের সঠিক স্ট্রাকচার! 🎯 এখন ফর্ম কাজ করবে পারফেক্টলি! 🚀
   <form action="/submit" method="POST">
     <label for="comment">Enter your comment:</label>
     <br>
     <textarea name="comment" id="comment" cols="60" rows="10"></textarea>
     <br>
     <button type="submit">Submit</button>
-  </form> -->
-  
-  
+  </form>
+  </div> -->
+  <script>
+    // step-1
+    document.getElementById('btn').addEventListener('click',function(){
+      // step-2
+      const commentBox = document.getElementById('new-comment-box');
+      const newComment = commentBox.value;
+      // step-3
+      const mainContainer = document.getElementById('main-container');
+      const p = document.createElement('p');
+      p.innerText = newComment;
+      mainContainer.appendChild(p);
+      // step-4
+      commentBox.value = '';
+    })
+  </script>
 </body>
 </html>

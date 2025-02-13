@@ -13,3 +13,7 @@ js code:
    document.getElementById('make-goldenrod').addEventListener('click',function(){
     document.body.style.backgroundColor = 'goldenrod';
    });
+
+   ##.............
+সাধারণত h1,p,div etc এর মান পেতে হলে innerText ব্যবহার করতে হয় কিন্তু Input field,textarea এগুলোর মান পেতে হলে .value ব্যবহার করতে হয় 
+
