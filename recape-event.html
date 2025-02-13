@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recape-Event </title>
+</head>
+<body>
+  <h1 id="heding">Walcome to JS</h1>
+  
+  <button id="btn-id">update</button>
+  <button id="btn-id2">update</button>
+  <button id="btn-id3">update</button>
+  <script>
+   document.getElementById('btn-id').addEventListener('click',function(){
+    document.body.style.backgroundColor = 'green';
+   });
+
+   document.getElementById('btn-id2').addEventListener('click',function(){
+    const text = document.getElementById('heding');
+    text.style.color = "green";
+    });
+
+    document.getElementById('btn-id3').addEventListener('click',function(){
+      const colorChange = document.getElementById('btn-id');
+      colorChange.style.backgroundColor = "red";
+      colorChange.style.color = "white";
+      colorChange.style.border = "none";
+      colorChange.style.borderRadius = "15px";
+      colorChange.style.padding = "8px 25px";
+    });
+
+
+  
+  </script>
+</body>
+</html>

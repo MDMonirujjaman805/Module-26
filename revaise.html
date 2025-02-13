@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>revaise</title>
+  <style>
+  #container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* border: 2px solid black; */
+    margin-top: 400px;
+    gap: 10px;
+  }
+    #button-1{
+      padding: 8px 25px;
+      border-radius: 10px;
+      border: none;
+      background-color: purple;
+      color: white;
+      cursor: progress;
+    }
+    #button-2{
+      padding: 8px 25px;
+      border-radius: 10px;
+      border: none;
+      background-color: purple;
+      color: white;
+      cursor: pointer;
+    }
+    #button-3{
+      padding: 8px 25px;
+      border-radius: 10px;
+      border: none;
+      background-color: purple;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- <h1 id="text" onclick="hendleOnClick">Hello Monir</h1> -->
+   <h1>Final DOM Event Hadler</h1>
+  <h3 id="handler-status" >Hello Monir</h3>
+  <button onclick="hendleOnClick()">click here</button>
+  
+  <button id="button-1" onclick="button1()">click me</button>
+  <button id="button-2">click here</button>
+  </div>
+  <script>
+    function hendleOnClick(){
+      const handlerStatus = document.getElementById('handler-status');
+      handlerStatus.innerTaxt = "walcome to my home and by country";
+    }
+    // system-1
+   function button1(){
+    document.body.style.backgroundColor = "brown";
+   };
+  //  system-2
+  document.getElementById('button-2').addEventListener('click',function(){
+    document.body.style.backgroundColor = 'gray'
+  });
+  </script>
+</body>
+</html>

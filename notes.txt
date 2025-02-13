@@ -1,0 +1,15 @@
+DOM Event Listener use case:
+option-1:
+html code:
+<button class="button" onclick="makeGreen()" >make green</button>
+js code:
+function makeGreen(){
+    document.body.style.backgroundColor = "green"
+     };
+option-2:!IMPORTANT
+html code:
+   <button id="make-goldenrod">make goldenrod</button>
+js code:
+   document.getElementById('make-goldenrod').addEventListener('click',function(){
+    document.body.style.backgroundColor = 'goldenrod';
+   });

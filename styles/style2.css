@@ -1,0 +1,32 @@
+body{
+  /* color: rgb(21, 131, 131); */
+  background-color: darkcyan;
+}
+#make-green{
+  padding: 10px 25px 10px 25px;
+  border: none;
+  background-color: rgb(95, 49, 49);
+  border-radius: 20px;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+}
+/* #div1{
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+} */
+div{
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+h1{
+  color: white;
+}

@@ -5,18 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Module-26</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style2.css">
 </head>
 <body>
   <h1>Hello world</h1>
   <button class="button" onclick="console.log(70);" >  Another Button </button>
   <button class="button" onclick="console.log(true);">  Another Button </button>
-  <button id="make-green">Click me </button>
+  <button id="make-green" onclick="console.log(50);">Click me </button>
+  <button onclick="document.body.style.backgroundColor = 'rgb(51, 39, 39)' " class="button">make dipbrwon</button>
+  <button class="button" onclick="makeGreen()" >make green</button>
+  <button id="make-pink">make pink</button>
+  <button id="make-goldenrod">make goldenrod</button>
+  <button id="make-goldenrod2">make goldenrod</button>
+
   <div id="div1"></div>
   <div>box1</div>
+  <br>
+   
+ 
+
+
   <script src="js/script.js"></script>
   <script>
-    const makeGreen = document.getElementById('make-green');
-    console.log(makeGreen);
+    function makeGreen(){
+    document.body.style.backgroundColor = "green"
+   };
+
+   document.getElementById('make-goldenrod').addEventListener('click',function(){
+    document.body.style.backgroundColor = 'goldenrod';
+   });
+   document.getElementById('make-goldenrod2').addEventListener('click',function(){
+    console.log('hello monir');
+   })
+
+   const pinkButton = document.getElementById ('make-pink');
+   pinkButton.addEventListener('click',makePink)   
+   function makePink(){
+    document.body.style.backgroundColor = "pink";
+   }
   </script>
 </body>
 </html>

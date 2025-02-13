@@ -6,17 +6,8 @@
   color: white;
   font-size: large;
   cursor: pointer;
-};
-h1{
-  color: green;
 }
-div{
- height: 10px;
- width: 100px;
- border-radius: 10px;
- background-color: gray;
-}
- #make-green{
+#make-pink{
   padding: 10px 25px 10px 25px;
   border: none;
   background-color: brown;
@@ -24,8 +15,8 @@ div{
   color: white;
   font-size: large;
   cursor: pointer;
-};
-/* #red{
+}
+#make-goldenrod{
   padding: 10px 25px 10px 25px;
   border: none;
   background-color: brown;
@@ -33,16 +24,13 @@ div{
   color: white;
   font-size: large;
   cursor: pointer;
-}; */
-#div1{
-  height: 10px;
-  width: 100px;
-  background-color: gray;
-  /* border-radius: 10px; */
-};
-/* #div1{
-  height: 10px;
-  width: 100px;
-  background-color: gray;
-  border-radius: 10px;
-} */
+}
+#make-goldenrod2{
+  padding: 10px 25px 10px 25px;
+  border: none;
+  background-color: brown;
+  border-radius: 20px;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+}
