@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event-Bubble </title>
+</head>
+<body>
+  <h1>Exploring Event Bulle </h1>
+  <section id="section-container">
+    <ul id="ul-list">
+      <li id="item-1">Lorem, ipsum dolor.</li>
+      <li id="item-2">Mollitia, blanditiis iure.</li>
+      <li id="item-3">Labore, suscipit excepturi.</li>
+      <li id="item-4">Commodi, aliquid iure?</li>
+      <li id="item-5">Consequuntur, eum deserunt.</li>
+      <li id="item-6">Velit, delectus ratione.</li>
+    </ul>
+  </section>
+
+  <script>
+    document.getElementById('item-2').addEventListener('click',function(){
+      console.log('Hello monir! Good Morning one.');
+    });
+    // document.getElementById('item-2').addEventListener('click',function(event){
+    //   console.log('Hello monir! Good Morning two.');
+    //   event.stopImmediatePropagation();
+    // });
+    // document.getElementById('item-2').addEventListener('click',function(event){
+    //   console.log('Hello monir! Good Morning theree.');
+    //   event.stopPropagation();
+    // });
+    document.getElementById('ul-list').addEventListener('click',function(){
+        console.log('ul clicked');
+      });
+    document.getElementById('section-container').addEventListener('click',function(){
+        console.log('section container clicked');
+      });
+  </script>
+</body>
+</html>

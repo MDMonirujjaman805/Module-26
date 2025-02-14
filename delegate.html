@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event-Delegate</title>
+</head>
+<body>
+  <h1>Explore Event Delegate </h1>
+  <section id="main-container">
+    <ul id="ul-container">
+      <li class="list-item">Lorem, ipsum dolor.1</li>
+      <li class="list-item">Lorem, ipsum dolor.2</li>
+      <li class="list-item">Lorem, ipsum dolor.3</li>
+      <li class="list-item">Lorem, ipsum dolor.4</li>
+      <li class="list-item">Lorem, ipsum dolor.5</li>
+      <li class="list-item">Lorem, ipsum dolor.6</li>
+    </ul>
+    <button id="list-item-btn">add a item </button>
+  </section>
+
+  <script>
+    document.getElementById('ul-container').addEventListener('click',function(event){
+      event.target.parentNode.removeChild(event.target)
+    })
+    document.getElementById('list-item-btn').addEventListener('click',function(){
+      const newItemAdd = document.getElementById('ul-container');
+      const newLi = document.createElement('newLi');
+      newLi.innerText =' Hello my name is Monir ';
+      newLi.classList.add('list-item');
+      newItemAdd.appendChild(newLi);
+    })
+    
+//     নোট:
+// যদি কোন Event Delegate করতে হয় তাহলে তা Parent কে করতে হবে কারণ Bubble সবসময় নিচের থেকে উপর দিকে যায়  
+
+    //   const listItem = document.getElementsByClassName('list-item');
+    // for(const li of listItem){
+    //   li.addEventListener('click',function(event){
+    //     event.target.parentNode.removeChild(event.target);
+    //   })
+    // };
+    // const ulContainer = document.getElementById('ul-container').addEventListener('click',function(){
+    //   console.log('Hello Monir!');
+    // })
+  </script>
+</body>
+</html>

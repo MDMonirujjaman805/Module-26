@@ -18,3 +18,6 @@ js code:
 সাধারণত h1,p,div etc এর মান পেতে হলে innerText ব্যবহার করতে হয় কিন্তু Input field,textarea এগুলোর মান পেতে হলে .value ব্যবহার করতে হয় 
 
 addEventListener property:click,mousemove,mouseover,mouseenter,mouseout etc https://www.w3schools.com/jsref/dom_obj_event.asp  
+
+নোট:
+যদি কোন Event Delegate করতে হয় তাহলে তা Parent কে করতে হবে কারণ Bubble সবসময় নিচের থেকে উপর দিকে যায়  

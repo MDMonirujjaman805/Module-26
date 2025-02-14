@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summary-Event-Handlers </title>
+</head>
+<body>
+  <h1>Explore Events Handlers </h1>
+  <button onclick="makeGreen()">make green</button>
+  <button id="bg-color">make gray</button>
+  <br>
+  <br>
+  <input type="text" name="" id="user-text">
+
+  <script>
+    // option-1
+    function makeGreen(){
+      document.body.style.backgroundColor = "green";
+    };
+     // option-2
+    const bgColor = document.getElementById('bg-color').addEventListener('click',function(){
+      document.body.style.backgroundColor = "gray";
+    });
+    document.getElementById("user-text").addEventListener('keyup',function(event){
+      console.log(event.target.value);
+    });
+  </script>
+</body>
+</html>
